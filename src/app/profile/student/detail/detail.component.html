@@ -1,0 +1,20 @@
+<div>
+  <form>
+    <table>
+      <tr>
+        <td>Name</td>
+        <div>{{profile.name}}</div>
+      </tr>
+      <tr>
+        <td>Sdt</td>
+        <div>{{profile.phoneNumber}}</div>
+      </tr>
+      <tr>
+        <td>Ngày sinh</td>
+        <div>{{ profile.dob | FormatForm}}</div>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<Button (click)="changeValue()">changeValue</Button>

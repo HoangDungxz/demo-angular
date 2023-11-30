@@ -1,0 +1,26 @@
+<div>
+  <form (ngSubmit)="handleFormSubmit()" [formGroup]="studentForm">
+    <table>
+      <tr>
+        <td>Name</td>
+        <td><input formControlName="name" type="text">
+          <app-shared [formName]="studentForm" [name]="'name'"></app-shared>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Sdt</td>
+        <td><input formControlName="phoneNumber" type="text">
+          <app-shared [formName]="studentForm" [name]="'phoneNumber'"></app-shared>
+        </td>
+      </tr>
+      <tr>
+        <td>Ngày sinh</td>
+        <td><input formControlName="dob" type="text">
+          <app-shared [formName]="studentForm" [name]="'dob'"></app-shared>
+        </td>
+      </tr>
+    </table>
+    <button type="submit">Submit</button>
+  </form>
+</div>

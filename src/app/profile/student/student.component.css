@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  border: 1px solid #000;
+  padding: 30px;
+}
+
+.flex>div {
+  flex: auto;
+}
